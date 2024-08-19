@@ -1,0 +1,38 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "ignorePatterns": [
+      "node_modules/*",
+      "lib/*",
+      ".next/*",
+      ".out/*",
+      "!.prettierrc.js",
+      "!.d.ts",
+      "**/*.d.ts"
+    ],
+    "overrides": [
+      {
+        "files": ["*.ts", "*.tsx"],
+        "excludedFiles": ["*.test.ts", "node_modules/*"],
+        "extends": [
+          "plugin:@typescript-eslint/recommended",
+          "plugin:@typescript-eslint/recommended-requiring-type-checking"
+        ],
+  
+        "rules": {
+          "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+          "semi": 0,
+          "linebreak-style": 0
+        },
+        "parserOptions": {
+          "project": ["./tsconfig.json"]
+        }
+      }
+    ],
+    "rules": {
+      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+      "semi": 0,
+      "linebreak-style": 0
+    }
+  }
+  
