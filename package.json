@@ -1,6 +1,6 @@
 {
   "name": "logbridge",
-  "version": "1.1.45",
+  "version": "1.1.46",
   "description": "A package for forwarding various logs/outputs to Logstash with plugin support.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
