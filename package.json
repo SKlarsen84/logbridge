@@ -4,6 +4,9 @@
   "description": "A package for forwarding various logs/outputs to Logstash with plugin support.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SKlarsen84/logbridge"},
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts",
